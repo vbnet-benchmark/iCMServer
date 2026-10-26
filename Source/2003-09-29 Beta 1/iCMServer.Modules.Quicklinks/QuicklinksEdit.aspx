@@ -1,0 +1,143 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="QuicklinksEdit.aspx.vb" Inherits="iConsulting.iCMServer.Modules.Quicklinks.QuicklinksEdit"%>
+<%@ Register TagPrefix="iCMServerStyle" TagName="Title" Src="~/Server/Css/iCMServerStyle.ascx"%>
+<HTML>
+	<HEAD>
+		<icmserverstyle:title id="iCMServerStyle1" ViewSource="Main" ViewType="Standard" runat="server"></icmserverstyle:title>
+	</HEAD>
+	<BODY bottomMargin="0" leftMargin="0" topMargin="0" rightMargin="0">
+		<form id="Form1" enctype="multipart/form-data" runat="server">
+			<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+				<tr vAlign="top">
+					<td colSpan="2">&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<br>
+						<table width="98%" cellspacing="0" cellpadding="4" border="0">
+							<tr valign="top">
+								<td width="150">
+									&nbsp;
+								</td>
+								<td width="*">
+									<table width="500" cellspacing="0" cellpadding="0">
+										<tr>
+											<td align="left" class="Head">
+												<asp:Label id="lblHeader" runat="server">lblHeader</asp:Label>
+											</td>
+										</tr>
+									</table>
+									<table width="750" cellspacing="0" cellpadding="0" border="0">
+										<tr>
+											<td class="SubHead" colspan="3">
+												<hr>
+											</td>
+										</tr>
+										<tr>
+											<td width="100" class="SubHead">
+												<asp:Label id="lblTitle" runat="server">lblTitle</asp:Label>
+											</td>
+											<td rowspan="5">
+												&nbsp;
+											</td>
+											<td>
+												<asp:TextBox id="txtTitle" runat="server" Width="363px"></asp:TextBox>
+											</td>
+											<td width="25" rowspan="5">
+												&nbsp;
+											</td>
+											<td class="Normal" width="250">
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead">
+												<asp:Label id="lblUrl" runat="server">lblUrl</asp:Label>
+											</td>
+											<td>
+												<asp:DropDownList id="ddUrl" runat="server" Width="363px" AutoPostBack="True"></asp:DropDownList>
+											</td>
+											<td class="Normal">
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead">
+											</td>
+											<td>
+												<asp:TextBox id="txtUrl" runat="server" Width="363px"></asp:TextBox>
+											</td>
+											<td class="Normal">
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead" vAlign="top">
+												<asp:Label id="lblDescription" runat="server">lblDescription</asp:Label>
+											</td>
+											<td>
+												<asp:TextBox id="txtDescription" runat="server" Width="363px" TextMode="MultiLine" Height="104px"></asp:TextBox>
+											</td>
+											<td>
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead">
+												<asp:Label id="lblOrder" runat="server">lblOrder</asp:Label>
+											</td>
+											<td>
+												<asp:TextBox id="txtOrder" runat="server" Width="64px"></asp:TextBox>
+											</td>
+											<td class="Normal">
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead" colspan="3">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead" colspan="3">
+												<hr>
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead" colspan="3">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead" colspan="3">
+												<asp:Button id="btnUpdate" runat="server" Text="btnUpdate" CssClass="iCWebControlsII"></asp:Button>&nbsp;
+												<asp:Button id="btnCancel" runat="server" Text="btnCancel" CssClass="iCWebControlsII"></asp:Button>&nbsp;
+												<asp:Button id="btnDelete" runat="server" Text="btnDelete" CssClass="iCWebControlsII"></asp:Button>
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead" colspan="3">
+												<asp:Button id="btnExport" runat="server" Text="Export" CssClass="iCWebControlsII"></asp:Button>&nbsp;
+												<asp:Button id="btnExportSafe" runat="server" Text="ExportSafe" CssClass="iCWebControlsII"></asp:Button>
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead" colspan="3">
+												<input type="file" id="FileUploadIcon" runat="server">&nbsp;
+												<asp:Button id="btnUploadIcon" runat="server" Text="UploadIcon" CssClass="iCWebControlsII"></asp:Button>&nbsp;
+												<asp:Button id="btnUploadIconSafe" runat="server" Text="UploadIconSafe" CssClass="iCWebControlsII"></asp:Button>
+											</td>
+										</tr>
+										<tr>
+											<td class="SubHead" colspan="3">
+												<asp:Button id="btnBulkImportIcons" runat="server" Text="BulkImportIcons" CssClass="iCWebControlsII"></asp:Button>&nbsp;
+												<asp:Button id="btnBulkImportIconsSafe" runat="server" Text="BulkImportIconsSafe" CssClass="iCWebControlsII"></asp:Button>
+											</td>
+										</tr>
+									</table>
+									<p>&nbsp;&nbsp;&nbsp;</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</BODY>
+</HTML>

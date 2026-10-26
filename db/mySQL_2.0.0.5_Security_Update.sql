@@ -1,0 +1,1 @@
+-- all fixes is inside the mySQL_2.0.0_Full.sql file;
